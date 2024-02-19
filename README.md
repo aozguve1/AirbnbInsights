@@ -10,20 +10,22 @@ To run this analysis, ensure you have Python installed along with the following 
 2. Place the Airbnb Boston dataset in the specified directory.
 3. Run the Jupyter notebook to execute the analysis and generate visualizations.
 ## Key Findings
+![Alt text](MeanPriceAcrossNeighbourhoods.png)
+This bar chart shows the mean price of Airbnb listings across neighborhoods in Boston. From the graph we can conclude:
+- The South Boston Waterfront demonstrates itself as the most expensive area, with average prices significantly higher than other neighborhoods.
+- A multi layered pricing structure is evident among neighborhoods, with Charlestown, the West End, and West Roxbury featuring as higher-priced areas.
+- Hyde Park being the most budget-friendly option
 
-This bar chart illustrates the mean price of Airbnb listings across different neighborhoods in Boston. From the visualization, we can infer that:
-- The South Boston Waterfront, Charlestown, and the West End are the most expensive neighborhoods on average.
-- There is a gradual decrease in the average price as we move towards neighborhoods like Brighton, Leather District, Roxbury, and Hyde Park.
-- The least expensive neighborhoods on average are Hyde Park and JP NF, which may indicate more affordable options for upcoming travelers.
+![Alt text](MostPopularNeighbourhoods.png)
+This bar chart ranks the neighborhoods by total Airbnb reviews, which can be used as a representative for popularity. By utilizing this graph we can observe:
+- Dorchester leads in popularity with the highest number of reviews, suggesting it is a highly desired location for Airbnb users.
+- Some  neighborhoods like Beacon Hill and Back Bay have surprisingly lower review counts, which might indicate higher prices or less rental availability.
 
+![Alt text](AveragePricebyN&RT.png)
+This heatmap provides a detailed look at the average price for different room types across neighborhoods:
+- West Roxbury, Charlestown, and the South Boston Waterfront have the highest average prices for entire homes or apartments, which might reflect their desirability or larger property sizes.
+- Hotel rooms, where available, are priced variably across neighborhoods, with some areas like Allston and the Leather District showing more competitive pricing.
+- Shared rooms, while not widely available, present the most economical option across neighborhoods, with significant price drops compared to private rooms and entire homes.
 
-The bar chart depicting the total number of reviews per neighborhood provides insights into the popularity of each area:
-- Dorchester, Downtown, and the South End are the most reviewed neighborhoods, suggesting high guest traffic and popularity.
-- There is a noticeable drop in reviews for neighborhoods such as Jamaica Plain, Roxbury, and South Boston, indicating moderate popularity.
-- Back Bay and Beacon Hill, despite being central and historically significant areas, have fewer reviews, which could be due to higher pricing or less availability.
-
-This heatmap shows the average price for different types of rooms across neighborhoods:
-
-- Entire homes/apartments tend to be more expensive across all neighborhoods, with the South Boston Waterfront, Downtown, and Back Bay being the priciest.
-- Private rooms are consistently more affordable, with neighborhoods like Roxbury, Mattapan, and Hyde Park offering the most economical options.
-- Shared rooms are not commonly listed but are the cheapest option where available.
+## Data Source
+This project analyzes publicly available Airbnb data for Boston. The dataset was accessed from [Boston Airbnb Open Data](https://insideairbnb.com/get-the-data/).
